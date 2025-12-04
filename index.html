@@ -8,31 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-    <title>[Luis Crespo Mejias] | Portfolio</title>
+    <title>[Luis Crespo Mejias]</title>
 
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[c#], [Luis Crespo Mejias], [c++],[Game Developper],[Portfolio]" />
+    <meta name="keywords" content="c#, Luis Crespo Mejias, c++, Game Developer, Portfolio" />
 
-    <meta name="description" content="[Hi! Im Luis a GameDev with a passion for programming and this is my portfolio!] | Developer" />
+    <meta name="description" content="Hi! I'm Luis, a GameDev student with a passion for programming. This is my portfolio." />
 
     <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
 
     <!-- Add your primary-theme color for the value of content -->
     <meta name="theme-color" content="#36d1dc" />
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <!-- Fill content with the URL of this portfolio you'll host -->
     <meta property="og:url" content="https://devfolio.js.org/" />
-    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-    <meta property="og:title" content="[Your name here] | Developer" />
-    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta property="og:description" content="Made using DevFolio Template" />
-    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
-      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta property="og:title" content="Luis Crespo Mejias GameDevPortFolio" />
+    <meta property="og:description" content="Hi! I'm Luis, a GameDev student and this is my porfolio!" />
+
     <meta
       property="og:image"
-      content="https://devfolio.js.org/assets/devfolio.png"
+      content="ScreenShot.png"
     />
 
     <!-- Twitter -->
@@ -89,13 +84,24 @@
     <!-- End of Google Analytics -->
   </head>
   <body>
-    <!-- Hero Section -->
     <div id="hero">
-      <section class="container">
-        <h1 class="hero-title">
+            <video
+        autoplay
+        loop
+        muted
+        playsinline
+        id="hero-video"
+        poster="./assets/FallBackImage.png" 
+      >
+        <source src="./assets/trailerPortFolio.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <section class="container">
+        <h1 class="hero-title">
           Hello, my name is <span class="text-color-main name">Luis!</span>
           <br />
-           And this is my portfolio!
+           And these are some of my projects!
         </h1>
         <p class="hero-cta">
           <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
@@ -105,9 +111,7 @@
         <div class="scroll-down"></div
       ></a>
     </div>
-    <!-- /END Hero Section -->
 
-    <!-- About Section -->
     <section id="about">
       <div class="container">
         <h2 class="section-title">About Me</h2>
@@ -123,7 +127,7 @@
           </div>
           <div class="about-wrapper__info">
             <p class="about-wrapper__info-text">
-              "Hello! I am a programming enthusiast studying a degree in Video Game Development and Creation at the Universitat Jaume I. I am passionate about the world of video games in general, but I especially love strategy games, resource management games, and any subgenre of these. 
+              "Hello! I am a programming enthusiast studying a degree in video game creation and developement at the Universitat Jaume I. I am passionate about the world of video games in general, but I especially love strategy games, resource management games, and any subgenre of these. 
             </p>
             <p class="about-wrapper__info-text">
               Thanks to the university and my personal projects, I have been able to develop my other game developing skills, such as level design, narrative, art, and 3D modeling. I am excited to continue making games, and to keep growing both professionally and personally!"
@@ -147,7 +151,44 @@
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">La llama de Sant Antoni</h3>
+              <p class="project-wrapper__text-info">
+                Proyecto de groupo 
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+             <div class="project-wrapper__image">
+               <div class="youtube-container rounded">
+                  <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/RpDffC1DCFk?autoplay=0&mute=1&loop=1&controls=1&rel=0" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                  </iframe>
+              </div>
+          </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">La llama de Sant Antoni</h3>
               <p class="project-wrapper__text-info">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
@@ -169,18 +210,17 @@
             </div>
 
             <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
+               <div class="youtube-container rounded">
+                  <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/Y2Sr2BAKltU?autoplay=0&mute=1&loop=1&controls=1&rel=0" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                  </iframe>
+              </div>
           </article>
           <!-- /END Project -->
 
@@ -209,22 +249,20 @@
             </div>
 
             <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
+               <div class="youtube-container rounded">
+                  <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/mIhPxhZdQEE?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                  </iframe>
+              </div>
               </a>
             </div>
           </article>
           <!-- /END Project -->
-
-          <!-- Each .row is a project -->
+           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Project Title</h3>
@@ -249,24 +287,215 @@
             </div>
 
             <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
+               <div class="youtube-container rounded">
+                  <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/MkfXDrUZUpg?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                  </iframe>
+              </div>
               </a>
             </div>
           </article>
-          <!-- /END Project -->
+          <!-- Each .row is a project -->
+           <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <p class="project-wrapper__text-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
+                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
+                sint saepe nostrum! Enim, perferendis.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+               <div class="youtube-container rounded">
+                  <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/opql2eGAWaw?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                  </iframe>
+              </div>
+              </a>
+            </div>
+          </article>
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <p class="project-wrapper__text-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
+                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
+                sint saepe nostrum! Enim, perferendis.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+               <div class="youtube-container rounded">
+                  <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/GtNGfEzYjSs?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                  </iframe>
+              </div>
+              </a>
+            </div>
+          </article>
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <p class="project-wrapper__text-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
+                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
+                sint saepe nostrum! Enim, perferendis.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+               <div class="youtube-container rounded">
+                  <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/Q1Pi7C1UAzc?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                  </iframe>
+              </div>
+              </a>
+            </div>
+          </article>
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <p class="project-wrapper__text-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
+                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
+                sint saepe nostrum! Enim, perferendis.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+               <div class="youtube-container rounded">
+                  <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/fv8FSGke6_c?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                  </iframe>
+              </div>
+              </a>
+            </div>
+          </article>
+           
         </div>
       </div>
     </section>
     <!-- End Projects Section -->
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Art & Renders</h2>
+        
+        <div class="row">
+          
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="gallery-item">
+              <img src="./assets/Frontal.jpg" class="img-fluid rounded" alt="Personaje 3D">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h4>Character Model</h4>
+                  <p>Blender & ZBrush</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="gallery-item">
+              <img src="./assets/WideView.jpg" class="img-fluid rounded" alt="Concept Art">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h4>Environment Concept</h4>
+                  <p>Photoshop</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="gallery-item">
+              <img src="./assets/upshot.jpg" class="img-fluid rounded" alt="Prop 3D">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h4>Sci-Fi Weapon</h4>
+                  <p>Maya & Substance</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+      </div>
+    </section>
+    ```
+
 
     <!-- Contact Section -->
     <section id="contact">
