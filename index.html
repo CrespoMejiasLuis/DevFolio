@@ -1,641 +1,455 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-    <title>[Luis Crespo Mejias]</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="c#, Luis Crespo Mejias, c++, Game Developer, Portfolio" />
+  <title>[Luis Crespo Mejias]</title>
 
-    <meta name="description" content="Hi! I'm Luis, a GameDev student with a passion for programming. This is my portfolio." />
+  <meta name="keywords" content="c#, Luis Crespo Mejias, c++, Game Developer, Portfolio" />
 
-    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+  <meta name="description"
+    content="Hi! I'm Luis, a GameDev student with a passion for programming. This is my portfolio." />
 
-    <!-- Add your primary-theme color for the value of content -->
-    <meta name="theme-color" content="#36d1dc" />
+  <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://devfolio.js.org/" />
-    <meta property="og:title" content="Luis Crespo Mejias GameDevPortFolio" />
-    <meta property="og:description" content="Hi! I'm Luis, a GameDev student and this is my porfolio!" />
+  <meta name="theme-color" content="#36d1dc" />
 
-    <meta
-      property="og:image"
-      content="ScreenShot.png"
-    />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://devfolio.js.org/" />
+  <meta property="og:title" content="Luis Crespo Mejias GameDevPortFolio" />
+  <meta property="og:description" content="Hi! I'm Luis, a GameDev student and this is my porfolio!" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <!-- Again fill content attr with the URL of this portfolio you'll host -->
-    <meta property="twitter:url" content="https://devfolio.js.org" />
-    <!-- Recommended to use the same text used within <title> element -->
-    <meta property="twitter:title" content="[Your name here] | Developer" />
-    <!-- short description that shows up while your portfolio is shared -->
-    <meta
-      property="twitter:description"
-      content="Made using DevFolio Template"
-    />
-    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
-    <meta
-      property="twitter:image"
-      content="https://anilseervi.vercel.app/assets/devfolio.png"
-    />
+  <meta property="og:image" content="ScreenShot.png" />
 
-    <!-- link tags -->
-    <link rel="preload" as="style" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/main.css" />
 
-    <!-- FontAwesome Icons link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script defer src="./javascript/scrollreveal.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="./javascript/scrollveal.js"
-    ></script>
 
-    <!-- Remove Google Analytics once you have your portfolio website set-up -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag("js", new Date())
+  <link rel="preload" as="style" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 
-      gtag("config", "UA-122228201-4")
-    </script>
-    <!-- End of Google Analytics -->
-  </head>
-  <body>
-    <div id="hero">
-            <video
-        autoplay
-        loop
-        muted
-        playsinline
-        id="hero-video"
-        poster="./assets/FallBackImage.png" 
-      >
-        <source src="./assets/trailerPortFolio.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
 
-      <section class="container">
-        <h1 class="hero-title">
-          Hello, my name is <span class="text-color-main name">Luis!</span>
-          <br />
-           And these are some of my projects!
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
-        </p>
-      </section>
-      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-        <div class="scroll-down"></div
-      ></a>
-    </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="./javascript/scrollreveal.min.js"></script>
+  <script defer type="text/javascript" src="./javascript/scrollveal.js"></script>
 
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./assets/profile.png"
-              alt="Profile Image"
-              width="450"
-              height="350"
-            />
-          </div>
-          <div class="about-wrapper__info">
-            <p class="about-wrapper__info-text">
-              "Hello! I am a programming enthusiast studying a degree in video game creation and developement at the Universitat Jaume I. I am passionate about the world of video games in general, but I especially love strategy games, resource management games, and any subgenre of these. 
-            </p>
-            <p class="about-wrapper__info-text">
-              Thanks to the university and my personal projects, I have been able to develop my other game developing skills, such as level design, narrative, art, and 3D modeling. I am excited to continue making games, and to keep growing both professionally and personally!"
 
-            </p>
-            <span class="about-wrapper__cta">
-              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
-            </span>
-          </div>
-        </div>
-      </div>
+</head>
+
+<body>
+  <div id="hero">
+          <video         autoplay         loop         muted playsinline         id="hero-video"
+      poster="./assets/FallBackImage.png"      >
+             
+      <source src="./assets/trailerPortFolio.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+           
+    </video>
+
+          <section class="container">
+              <h1 class="hero-title">
+        Hello, my name is <span class="text-color-main name">Luis!</span>
+        <br />
+        And these are some of my projects!
+      </h1>
+      <p class="hero-cta">
+        <a class="cta-btn cta-btn--hero" href="#about">About me</a>
+      </p>
     </section>
-    <!-- /END About Section -->
-
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">La llama de Sant Antoni</h3>
-              <p class="project-wrapper__text-info">
-                Proyecto de groupo 
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-             <div class="project-wrapper__image">
-               <div class="youtube-container rounded">
-                  <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/RpDffC1DCFk?autoplay=0&mute=1&loop=1&controls=1&rel=0" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                  </iframe>
-              </div>
-          </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">La llama de Sant Antoni</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-               <div class="youtube-container rounded">
-                  <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/Y2Sr2BAKltU?autoplay=0&mute=1&loop=1&controls=1&rel=0" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                  </iframe>
-              </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-               <div class="youtube-container rounded">
-                  <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/mIhPxhZdQEE?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                  </iframe>
-              </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-           <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-               <div class="youtube-container rounded">
-                  <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/MkfXDrUZUpg?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                  </iframe>
-              </div>
-              </a>
-            </div>
-          </article>
-          <!-- Each .row is a project -->
-           <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-               <div class="youtube-container rounded">
-                  <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/opql2eGAWaw?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                  </iframe>
-              </div>
-              </a>
-            </div>
-          </article>
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-               <div class="youtube-container rounded">
-                  <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/GtNGfEzYjSs?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                  </iframe>
-              </div>
-              </a>
-            </div>
-          </article>
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-               <div class="youtube-container rounded">
-                  <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/Q1Pi7C1UAzc?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                  </iframe>
-              </div>
-              </a>
-            </div>
-          </article>
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-               <div class="youtube-container rounded">
-                  <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/fv8FSGke6_c?autoplay=0&mute=1&loop=1&controls=1"                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                  </iframe>
-              </div>
-              </a>
-            </div>
-          </article>
-           
-        </div>
-      </div>
-    </section>
-    <!-- End Projects Section -->
-    <section id="gallery">
-  <div class="container">
-    <h2 class="section-title">Art & Renders</h2>
-
-    <div class="carousel-wrapper">
-      
-      <button class="carousel-btn btn-prev" id="prevBtn">
-        <i class="fa fa-chevron-left"></i>
-      </button>
-
-      <div class="carousel-track-container">
-        <ul class="carousel-track">
-          
-          <li class="carousel-slide current-slide">
-            <img src="./assets/Frontal.jpg" alt="Render 1">
-            <div class="gallery-overlay">
-               <h3>Character Design</h3>
-               <p>ZBrush</p>
-            </div>
-          </li>
-
-          <li class="carousel-slide">
-            <img src="./assets/upshot.jpg" alt="Dibujo 1">
-            <div class="gallery-overlay">
-               <h3>Environment Art</h3>
-               <p>Photoshop</p>
-            </div>
-          </li>
-
-          <li class="carousel-slide">
-            <img src="./assets/WideView.jpg" alt="Render 2">
-            <div class="gallery-overlay">
-               <h3>Weapon Prop</h3>
-               <p>Maya</p>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-
-      <button class="carousel-btn btn-next" id="nextBtn">
-        <i class="fa fa-chevron-right"></i>
-      </button>
-
-    </div>
+    <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+      <div class="scroll-down"></div>
+    </a>
   </div>
-</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="row about-wrapper">
+        <div class="about-wrapper__image">
+          <img class="img-fluid" src="./assets/profile.png" alt="Profile Image" width="450" height="350" />
+        </div>
+        <div class="about-wrapper__info">
+          <p class="about-wrapper__info-text">
+            "Hello! I am a programming enthusiast studying a degree in video game creation and developement at the
+            Universitat Jaume I. I am passionate about the world of video games in general, but I especially love
+            strategy games, resource management games, and any subgenre of these.
+          </p>
+          <p class="about-wrapper__info-text">
+            Thanks to the university and my personal projects, I have been able to develop my other game developing
+            skills, such as level design, narrative, art, and 3D modeling. I am excited to continue making games, and to
+            keep growing both professionally and personally!"
+
+          </p>
+          <span class="about-wrapper__cta">
+            <a href="./assets/Curriculum Vitae Luis Crespo.pdf" target="_blank" class="cta-btn cta-btn--resume">View
+              Resume</a>
+          </span>
         </div>
       </div>
-    </section>
-    <!-- END Contact Section -->
+    </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container">
-        <a href="#hero" class="back-to-top" aria-label="go back to top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="twitter"
-          >
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="instagram"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="codepen"
-          >
-            <i class="fa-brands fa-codepen"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="linkedin"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="github"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-        <hr />
-        <p class="footer__text">
-          &copy; <span id="year"></span> - Template by
-          <a
-            href="https://github.com/AnilSeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Anil Seervi</a
-          >. <br />Made with &hearts;
-        </p>
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Projects</h2>
+
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">La Llama de Sant Antoni</h3>
+            <p class="project-wrapper__text-info">
+              A team-developed game centered around the traditional Sant Antoni festival at Vilanova D'Alcoleu.
+              Awarded with best narrative,best cultural adaptation and best cohesive art.
+              My main focus was the narrative direction and cultural investigation. I also helped with the game design
+              programming and art.
+            </p>
+            <p class="project-wrapper__text-info"><strong>Keywords:</strong> Group Project · Unity · 2D Game · Narrative
+            </p>
+
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="youtube-container rounded">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/RpDffC1DCFk?autoplay=0&mute=1&loop=1&controls=1&rel=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </article>
+
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">PinguinEscape</h3>
+            <p class="project-wrapper__text-info">
+              A stealth game where you control a penguin escaping from AI-driven soldiers.
+              My main focus was the level Design, but I also participated in the game AI and game mechanics.
+            </p>
+            <p class="project-wrapper__text-info"><strong>Keywords:</strong> Unity · Team Game ·A* Pathfinding · Machine
+              States </p>
+
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="youtube-container rounded">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/Y2Sr2BAKltU?autoplay=0&mute=1&loop=1&controls=1&rel=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+        </article>
+
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">GravityIsRelative</h3>
+            <p class="project-wrapper__text-info">
+              An endless runner where the core mechanic revolves around flipping gravity.
+              Players toggle between normal and inverted physics to dodge obstacles and progress.
+              Fully developed by me.
+            </p>
+            <p class="project-wrapper__text-info"><strong>Keywords:</strong> Endless Runner · Gravity · Physics ·
+              Platformer · Unity</p>
+
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="youtube-container rounded">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/mIhPxhZdQEE?autoplay=0&mute=1&loop=1&controls=1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            </a>
+          </div>
+        </article>
+
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Carcanoid</h3>
+            <p class="project-wrapper__text-info">
+              A car-themed Arkanoid (brick-breaker) game built with the Phaser JS framework.
+              My main focus was the core mechanics programming and the game feel.
+
+            </p>
+            <p class="project-wrapper__text-info"><strong>Keywords:</strong> Phaser · JavaScript · Web Game · Arkanoid ·
+              · HTML5</p>
+
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="youtube-container rounded">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/MkfXDrUZUpg?autoplay=0&mute=1&loop=1&controls=1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            </a>
+          </div>
+        </article>
+
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">UjiBan</h3>
+            <p class="project-wrapper__text-info">
+              A Sokoban-style puzzle game for Android featuring a built-in level designer
+              and a database backend for saving custom puzzles.
+              School project where my main focus was the gameplay mechanics programming and the level editor.
+            </p>
+            <p class="project-wrapper__text-info"><strong>Keywords:</strong> Android · Puzzle · Sokoban · Level Editor ·
+              Mobile · Database</p>
+
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="youtube-container rounded">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/opql2eGAWaw?autoplay=0&mute=1&loop=1&controls=1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            </a>
+          </div>
+        </article>
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">WaterDrop</h3>
+            <p class="project-wrapper__text-info">
+              A physics-based platformer demo where a water-drop character navigates through levels.
+              Highlights physics interactions and character movement.
+            </p>
+            <p class="project-wrapper__text-info"><strong>Keywords:</strong> Platformer · 2D</p>
+
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="youtube-container rounded">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/GtNGfEzYjSs?autoplay=0&mute=1&loop=1&controls=1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            </a>
+          </div>
+        </article>
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">MarioKart 3D Model</h3>
+            <p class="project-wrapper__text-info">
+              A detailed 3D model of a Mario Kart vehicle, created in 3ds Max.
+            </p>
+            <p class="project-wrapper__text-info"><strong>Keywords:</strong> 3ds Max · 3D Modeling · Texturing ·
+              Rendering</p>
+
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="youtube-container rounded">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/Q1Pi7C1UAzc?autoplay=0&mute=1&loop=1&controls=1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            </a>
+          </div>
+        </article>
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">FlatIron Building</h3>
+            <p class="project-wrapper__text-info">
+              An accurate architectural recreation of New York's iconic Flatiron Building,
+              modeled using AutoCAD and rendered in Blender for a high-fidelity visualization.
+            </p>
+            <p class="project-wrapper__text-info"><strong>Keywords:</strong> AutoCAD · Blender · Architecture · 3D
+              Modeling · Visualization</p>
+
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="youtube-container rounded">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/fv8FSGke6_c?autoplay=0&mute=1&loop=1&controls=1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            </a>
+          </div>
+        </article>
+
       </div>
-    </footer>
-    <!-- END Footer Section -->
+    </div>
+  </section>
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title">Art & Renders</h2>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear()
-    </script>
-    <script src="./javascript/vanilla-tilt.min.js"></script>
-    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+      <div class="carousel-wrapper">
 
-    <script>
-  const track = document.querySelector('.carousel-track');
-  const slides = Array.from(track.children);
-  const nextButton = document.querySelector('#nextBtn');
-  const prevButton = document.querySelector('#prevBtn');
+        <button class="carousel-btn btn-prev" id="prevBtn">
+          <i class="fa fa-chevron-left"></i>
+        </button>
 
-  // 1. Colocar los slides uno al lado del otro
-  const slideWidth = slides[0].getBoundingClientRect().width;
+        <div class="carousel-track-container">
+          <ul class="carousel-track">
 
-  const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-  };
-  slides.forEach(setSlidePosition);
+            <li class="carousel-slide current-slide">
+              <img src="./assets/Frontal.jpg" alt="Render 1">
+              <div class="gallery-overlay">
+                <h3>Mario Kart Front View</h3>
+                <p>3dsMax</p>
+              </div>
+            </li>
 
-  // 2. Función para mover el carrusel
-  const moveToSlide = (track, currentSlide, targetSlide) => {
-    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-    currentSlide.classList.remove('current-slide');
-    targetSlide.classList.add('current-slide');
-  }
+            <li class="carousel-slide">
+              <img src="./assets/upshot.jpg" alt="Render  2">
+              <div class="gallery-overlay">
+                <h3>Mario Kart Top View</h3>
+                <p>3dsMax</p>
+              </div>
+            </li>
 
-  // 3. Click Izquierda
-  prevButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
-    const prevSlide = currentSlide.previousElementSibling;
-    
-    // Si no hay anterior (estamos en el 1º), vamos al último (Loop)
-    if (!prevSlide) {
+            <li class="carousel-slide">
+              <img src="./assets/WideView.jpg" alt="Render 3">
+              <div class="gallery-overlay">
+                <h3>Mario Kart Side View</h3>
+                <p>3dsMax</p>
+              </div>
+            </li>
+
+            <li class="carousel-slide">
+              <img src="./assets/norealista3.jpg" alt="Render 4">
+              <div class="gallery-overlay">
+                <h3>No Realista Mario Kart</h3>
+                <p>3dsMax</p>
+              </div>
+            </li>
+
+            <li class="carousel-slide">
+              <img src="./assets/norealista4.jpg" alt="Render 5">
+              <div class="gallery-overlay">
+                <h3>No Realista Mario Kart 2 </h3>
+                <p>3dsMax</p>
+              </div>
+            </li>
+
+            <li class="carousel-slide">
+              <img src="./assets/llegada final def 3.png" alt="Dibujo 1">
+              <div class="gallery-overlay">
+                <h3>Llegada Final Def 3</h3>
+                <p>Krita</p>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <img src="./assets/fight clarooscuro.png" alt="Dibujo 2">
+              <div class="gallery-overlay">
+                <h3>Fight Claro Oscuro</h3>
+                <p>Krita</p>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <img src="./assets/MontruoVolador.png" alt="Dibujo 3">
+              <div class="gallery-overlay">
+                <h3>Monstruo Volador</h3>
+                <p>Krita</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <button class="carousel-btn btn-next" id="nextBtn">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper">
+        <p class="contact-wrapper__text">Feel free to contact me for any questions or opportunities!</p>
+        <a href="mailto:luis_crespo_mejias@outlook.com"
+          class="cta-btn cta-btn--resume">luis_crespo_mejias@outlook.com</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear()
+  </script>
+  <script src="./javascript/vanilla-tilt.min.js"></script>
+  <script type="text/javascript" src="./javascript/valtilt.js"></script>
+
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('#nextBtn');
+    const prevButton = document.querySelector('#prevBtn');
+
+    const slideWidth = slides[0].getBoundingClientRect().width;
+
+    const setSlidePosition = (slide, index) => {
+      slide.style.left = slideWidth * index + 'px';
+    };
+    slides.forEach(setSlidePosition);
+
+    const moveToSlide = (track, currentSlide, targetSlide) => {
+      track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+      currentSlide.classList.remove('current-slide');
+      targetSlide.classList.add('current-slide');
+    }
+
+    prevButton.addEventListener('click', e => {
+      const currentSlide = track.querySelector('.current-slide');
+      const prevSlide = currentSlide.previousElementSibling;
+
+      if (!prevSlide) {
         const lastSlide = slides[slides.length - 1];
         moveToSlide(track, currentSlide, lastSlide);
-    } else {
+      } else {
         moveToSlide(track, currentSlide, prevSlide);
-    }
-  });
+      }
+    });
 
-  // 4. Click Derecha
-  nextButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
+    nextButton.addEventListener('click', e => {
+      const currentSlide = track.querySelector('.current-slide');
+      const nextSlide = currentSlide.nextElementSibling;
 
-    // Si no hay siguiente (estamos en el último), vamos al 1º (Loop)
-    if (!nextSlide) {
+      if (!nextSlide) {
         const firstSlide = slides[0];
         moveToSlide(track, currentSlide, firstSlide);
-    } else {
+      } else {
         moveToSlide(track, currentSlide, nextSlide);
-    }
-  });
+      }
+    });
 
-  // Recalcular tamaño si cambian el tamaño de la ventana
-  window.addEventListener('resize', () => {
-     const newSlideWidth = slides[0].getBoundingClientRect().width;
-     slides.forEach((slide, index) => {
+    window.addEventListener('resize', () => {
+      const newSlideWidth = slides[0].getBoundingClientRect().width;
+      slides.forEach((slide, index) => {
         slide.style.left = newSlideWidth * index + 'px';
-     });
-     // Reajustar posición actual
-     const currentSlide = track.querySelector('.current-slide');
-     track.style.transform = 'translateX(-' + currentSlide.style.left + ')';
-  });
-</script>
-  </body>
+      });
+      const currentSlide = track.querySelector('.current-slide');
+      track.style.transform = 'translateX(-' + currentSlide.style.left + ')';
+    });
+  </script>
+</body>
+
 </html>
