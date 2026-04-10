@@ -23,6 +23,7 @@
       grid-template-columns: 1fr;
     }
 
+// Date:10/04/2026 FIX: Adapted profile image styles to match portrait image dimensions instead of forced landscape.
     &__image {
       display: flex;
       height: 100%;
@@ -31,6 +32,10 @@
       img {
         max-width: 350px;
         width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.4);
       }
 
       @include respond(tab-land) {

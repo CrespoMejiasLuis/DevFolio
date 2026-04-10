@@ -1,0 +1,15 @@
+# Date:10/04/2026 FEAT: Created .gitignore to exclude large video files from git tracking.
+
+# Large video files
+assets/trailerPortFolio.mp4
+*.mp4
+
+# IDE
+.vscode/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# SCSS source (compiled CSS is in /css)
+style/
